@@ -19,7 +19,7 @@ const isNumber = (val) => !isNaN(Number(val));
   }
   handleSubmit(values){
     console.log(values);
-    this.props.postVec(values.vehiclename, values.owner, values.location,values.telnum, values.description);
+    this.props.postVehicles(values.vehiclename, values.owner, values.location,values.telnum, values.description);
     this.props.resetVecForm();
   }
 
